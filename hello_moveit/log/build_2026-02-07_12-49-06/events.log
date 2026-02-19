@@ -1,0 +1,99 @@
+[0.000000] (-) TimerEvent: {}
+[0.000942] (hello_moveit) JobQueued: {'identifier': 'hello_moveit', 'dependencies': OrderedDict()}
+[0.001279] (hello_moveit) JobStarted: {'identifier': 'hello_moveit'}
+[0.020563] (hello_moveit) JobProgress: {'identifier': 'hello_moveit', 'progress': 'cmake'}
+[0.021467] (hello_moveit) Command: {'cmd': ['/usr/bin/cmake', '/home/alt_bea/Documents/code/moveit2/moveit_ws/src/hello_moveit', '-DCMAKE_INSTALL_PREFIX=/home/alt_bea/Documents/code/moveit2/moveit_ws/src/hello_moveit/install/hello_moveit'], 'cwd': '/home/alt_bea/Documents/code/moveit2/moveit_ws/src/hello_moveit/build/hello_moveit', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('GHOSTTY_RESOURCES_DIR', '/snap/ghostty/current/share/ghostty'), ('USER', 'alt_bea'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SEAT', 'seat0'), ('XDG_SESSION_TYPE', 'x11'), ('STM32CubeMX_PATH', '/home/alt_bea/STM32CubeMX'), ('XDG_CACHE_HOME', '/home/alt_bea/.cache'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:'), ('HOME', '/home/alt_bea'), ('TERMINFO', '/snap/ghostty/current/share/terminfo'), ('OLDPWD', '/home/alt_bea/.local/bin'), ('TERM_PROGRAM_VERSION', '1.2.3'), ('DESKTOP_SESSION', 'i3'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1279'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'alt_bea'), ('WINDOWID', '60817412'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'alt_bea'), ('TERM', 'xterm-ghostty'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/alt_bea/.local/bin:/opt/ros/humble/bin:/snap/ghostty/current/bin:/snap/ghostty/current/usr/bin:/home/alt_bea/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/alt_bea/.local/share/JetBrains/Toolbox/scripts:/snap/ghostty/436/bin'), ('PAPERSIZE', 'a4'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('GHOSTTY_SHELL_FEATURES', 'cursor,path,title'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'i3'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XDG_DATA_HOME', '/home/alt_bea/.local/share'), ('XDG_CONFIG_HOME', '/home/alt_bea/.config'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'i3'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'ghostty'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('GHOSTTY_BIN_DIR', '/snap/ghostty/436/bin'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'i3'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GDK_PIXBUF_MODULE_FILE', '/home/alt_bea/snap/ghostty/common/.cache/gdk-pixbuf-loaders.cache'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('XDG_VTNR', '2'), ('PWD', '/home/alt_bea/Documents/code/moveit2/moveit_ws/src/hello_moveit/build/hello_moveit'), ('LC_ALL', 'C.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-i3:/etc/xdg'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/i3:/usr/share/gnome:/home/alt_bea/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('I3SOCK', '/run/user/1000/i3/ipc-socket.1437'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099720] (-) TimerEvent: {}
+[0.200105] (-) TimerEvent: {}
+[0.201264] (hello_moveit) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.300247] (-) TimerEvent: {}
+[0.399079] (hello_moveit) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.400404] (-) TimerEvent: {}
+[0.424574] (hello_moveit) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.500617] (-) TimerEvent: {}
+[0.601298] (-) TimerEvent: {}
+[0.642302] (hello_moveit) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.670671] (hello_moveit) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.681311] (hello_moveit) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.683842] (hello_moveit) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.694616] (hello_moveit) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.701454] (-) TimerEvent: {}
+[0.801992] (-) TimerEvent: {}
+[0.902588] (-) TimerEvent: {}
+[0.937116] (hello_moveit) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.963598] (hello_moveit) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.964468] (hello_moveit) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.965885] (hello_moveit) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.988725] (hello_moveit) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.002706] (-) TimerEvent: {}
+[1.103185] (-) TimerEvent: {}
+[1.203628] (-) TimerEvent: {}
+[1.303978] (-) TimerEvent: {}
+[1.356979] (hello_moveit) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.404137] (-) TimerEvent: {}
+[1.504077] (hello_moveit) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)\n'}
+[1.504278] (-) TimerEvent: {}
+[1.604566] (-) TimerEvent: {}
+[1.704973] (-) TimerEvent: {}
+[1.805575] (-) TimerEvent: {}
+[1.886196] (hello_moveit) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread \n'}
+[1.905689] (-) TimerEvent: {}
+[2.006288] (-) TimerEvent: {}
+[2.059683] (hello_moveit) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.077092] (hello_moveit) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.105121] (hello_moveit) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.106392] (-) TimerEvent: {}
+[2.129869] (hello_moveit) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.155921] (hello_moveit) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.206510] (-) TimerEvent: {}
+[2.306770] (-) TimerEvent: {}
+[2.407100] (-) TimerEvent: {}
+[2.479678] (hello_moveit) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[2.507218] (-) TimerEvent: {}
+[2.551827] (hello_moveit) StdoutLine: {'line': b'-- Found parameter_traits: 0.6.0 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[2.607368] (-) TimerEvent: {}
+[2.619839] (hello_moveit) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.624181] (hello_moveit) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.707484] (-) TimerEvent: {}
+[2.746229] (hello_moveit) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.780002] (hello_moveit) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.807629] (-) TimerEvent: {}
+[2.839443] (hello_moveit) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.856203] (hello_moveit) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.907733] (-) TimerEvent: {}
+[2.955272] (hello_moveit) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.17 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[3.003002] (hello_moveit) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem \n'}
+[3.007840] (-) TimerEvent: {}
+[3.108129] (-) TimerEvent: {}
+[3.110688] (hello_moveit) StdoutLine: {'line': b'-- library: /usr/lib/x86_64-linux-gnu/libcurl.so\n'}
+[3.171255] (hello_moveit) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[3.171462] (hello_moveit) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[3.208246] (-) TimerEvent: {}
+[3.308569] (-) TimerEvent: {}
+[3.388007] (hello_moveit) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono \n'}
+[3.408678] (-) TimerEvent: {}
+[3.438386] (hello_moveit) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options \n'}
+[3.473062] (hello_moveit) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread \n'}
+[3.508770] (-) TimerEvent: {}
+[3.532429] (hello_moveit) StderrLine: {'line': b'CMake Error at CMakeLists.txt:12 (find_package):\n'}
+[3.532703] (hello_moveit) StderrLine: {'line': b'  By not providing "Findmoveit_visual_tools.cmake" in CMAKE_MODULE_PATH this\n'}
+[3.532795] (hello_moveit) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[3.532882] (hello_moveit) StderrLine: {'line': b'  "moveit_visual_tools", but CMake did not find one.\n'}
+[3.532960] (hello_moveit) StderrLine: {'line': b'\n'}
+[3.533035] (hello_moveit) StderrLine: {'line': b'  Could not find a package configuration file provided by\n'}
+[3.533110] (hello_moveit) StderrLine: {'line': b'  "moveit_visual_tools" with any of the following names:\n'}
+[3.533192] (hello_moveit) StderrLine: {'line': b'\n'}
+[3.533265] (hello_moveit) StderrLine: {'line': b'    moveit_visual_toolsConfig.cmake\n'}
+[3.533338] (hello_moveit) StderrLine: {'line': b'    moveit_visual_tools-config.cmake\n'}
+[3.533416] (hello_moveit) StderrLine: {'line': b'\n'}
+[3.533488] (hello_moveit) StderrLine: {'line': b'  Add the installation prefix of "moveit_visual_tools" to CMAKE_PREFIX_PATH\n'}
+[3.533576] (hello_moveit) StderrLine: {'line': b'  or set "moveit_visual_tools_DIR" to a directory containing one of the above\n'}
+[3.533652] (hello_moveit) StderrLine: {'line': b'  files.  If "moveit_visual_tools" provides a separate development package or\n'}
+[3.533726] (hello_moveit) StderrLine: {'line': b'  SDK, be sure it has been installed.\n'}
+[3.533798] (hello_moveit) StderrLine: {'line': b'\n'}
+[3.533870] (hello_moveit) StderrLine: {'line': b'\n'}
+[3.533942] (hello_moveit) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[3.534026] (hello_moveit) StdoutLine: {'line': b'See also "/home/alt_bea/Documents/code/moveit2/moveit_ws/src/hello_moveit/build/hello_moveit/CMakeFiles/CMakeOutput.log".\n'}
+[3.547975] (hello_moveit) CommandEnded: {'returncode': 1}
+[3.581190] (hello_moveit) JobEnded: {'identifier': 'hello_moveit', 'rc': 1}
+[3.592162] (-) EventReactorShutdown: {}

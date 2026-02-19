@@ -1,0 +1,10 @@
+---
+# 基础样式
+BasedOnStyle: Google
+# 缩进宽度
+IndentWidth: 4
+# 连续空行限制
+MaxEmptyLinesToKeep: 2
+# 列限制（每行字符数）
+ColumnLimit: 100
+---

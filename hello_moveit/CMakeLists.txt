@@ -22,6 +22,7 @@ ament_target_dependencies(
   "rclcpp"
   "moveit_visual_tools"
 )
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 install(TARGETS hello_moveit
   DESTINATION lib/${PROJECT_NAME})
