@@ -6,14 +6,13 @@
 #include <memory>
 #include <rclcpp/rclcpp.hpp>
 #include <std_srvs/srv/trigger.hpp>
-#include <thread>
 
 // 定义一个类来管理 MoveIt 逻辑
 class MoveItPlanner {
 public:
     MoveItPlanner(const std::shared_ptr<rclcpp::Node>& node)
         : node_(node) {
-        
+
         // 1. 初始化 MoveGroupInterface (针对 panda_arm)
         move_group_interface_ = std::make_shared<moveit::planning_interface::MoveGroupInterface>(node_, "panda_arm");
 
@@ -21,7 +20,7 @@ public:
         moveit_visual_tools_ = std::make_shared<moveit_visual_tools::MoveItVisualTools>(
             node_, "panda_link0", rviz_visual_tools::RVIZ_MARKER_TOPIC,
             move_group_interface_->getRobotModel());
-        
+
         moveit_visual_tools_->deleteAllMarkers();
         moveit_visual_tools_->loadRemoteControl();
 
@@ -63,7 +62,7 @@ private:
 
         // B. 设置目标并规划
         move_group_interface_->setPoseTarget(target_pose);
-        
+
         moveit::planning_interface::MoveGroupInterface::Plan plan;
         bool success = (static_cast<bool>(move_group_interface_->plan(plan)));
 
@@ -76,7 +75,7 @@ private:
             draw_title("Executing...");
             moveit_visual_tools_->trigger();
             move_group_interface_->execute(plan);
-            
+
             response->success = true;
             response->message = "规划并执行成功";
         } else {
@@ -105,7 +104,7 @@ private:
 
 int main(int argc, char* argv[]) {
     rclcpp::init(argc, argv);
-    
+
     // 使用 NodeOptions 允许参数覆盖
     auto const node = std::make_shared<rclcpp::Node>(
         "interactive_moveit_node",
@@ -116,7 +115,7 @@ int main(int argc, char* argv[]) {
     // 否则服务回调可能会与 MoveGroup 的内部机制产生死锁
     rclcpp::executors::MultiThreadedExecutor executor;
     auto planner = std::make_shared<MoveItPlanner>(node);
-    
+
     executor.add_node(node);
     executor.spin();
 
